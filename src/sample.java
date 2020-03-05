@@ -9,7 +9,7 @@
 public class sample {
 	public static void main(String[] args) {
 		
-		int x = 5;
+		int x = 2;
 		int y = -2;
 	
 		if (x < y && x / 2 == 0) {
