@@ -15,7 +15,7 @@ public class sample01 {
 	 */
 	public static void main(String[] args) {
 		
-		int publicHoliday = 6;
+		int publicHoliday = 5;
 		
 		switch (publicHoliday) {
 			case 1:
