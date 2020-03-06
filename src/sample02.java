@@ -1,5 +1,9 @@
 /**
- * 
+ *好きな鮨（すし）を選択させ、それに対応したメッセージを表示する、鮨占いプログラムを作成しなさい。
+ * ※ 	switch 文を使用する。
+ * ※ 	選択は、“1：まぐろ　2：えび　3：こはだ．．．”のようなガイドを表示し数字で入力させる。
+ * ※ 	題材は鮨でなくても良い。
+
  */
 
 /**
@@ -20,8 +24,24 @@ public class sample02 {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("入力してください");
-		String input_text = scanner.nextLine();
-		System.out.println(input_text + "が入力されました");
+		int num = scanner.nextInt();
+		
+		switch(num) {
+			case 1:
+				System.out.println("大吉");
+				break;
+			case 2:
+				System.out.println("中吉");
+				break;
+			case 3:
+				System.out.println("小吉");
+				break;
+			case 4:
+				System.out.println("凶");
+				break;
+				
+		}
+		
 		
 		
 
