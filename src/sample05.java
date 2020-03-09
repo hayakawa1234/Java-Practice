@@ -1,30 +1,21 @@
 import java.util.Scanner;
 
 /**
- * 練習問題 4 - 21-0
+ * /**
+ * 練習問題 4 - 21
  * サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい。
  * サイズ 3 の例
  * X X
  *  X
  * X X
- * サイズ 4 の例
- * X  X
- *  XX
- *  XX
- * X  X
- * サイズ 5 の例
- * X   X
- *  X X
- *   X
- *  X X
- * X   X
+
  */
 
 /**
  * @author hayak
  *
  */
-public class sample04 {
+public class sample05 {
 
 	/**
 	 * @param args
@@ -37,14 +28,17 @@ public class sample04 {
 
 		int i;
 		int j;
+
 		for (i = 0; i < num; i++) {
-			System.out.print("y");
+			System.out.print("");
 			for (j = 0; j < num; j++) {
-
-				System.out.print("x");
+				if ((i + j) % 2 == 0) {
+					System.out.print("x");
+				} else {
+					System.out.print(" ");
+				}
 			}
-			System.out.println("z");
-
+			System.out.println("");
 		}
 	}
 }
