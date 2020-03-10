@@ -1,3 +1,4 @@
+
 /**
  * —ûK–â‘è 5 - 3
  * Ÿ‚ÌƒvƒƒOƒ‰ƒ€‚ğì¬‚µ‚È‚³‚¢B
@@ -13,22 +14,60 @@
  * @author hayak
  *
  */
+
 public class sample09 {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] value = { 1, 3, 8, 10, 12, 15, 18, 20, 21, 24 };
+
+		int[] values = { 1, 3, 8, 10, 12, 15, 18, 20, 21, 24 };
+
+		int evenValues[];
+		evenValues = new int[10];
+		for(int i=0;i<evenValues.length;i++) {
+			evenValues[i] = 0;
+		}
+
+		int oddValues[];
+		oddValues = new int[10];
+		for(int i=0;i<oddValues.length;i++) {
+			oddValues[i] = 0;
+		}
 		
-		for (int i = 0; i < value.length; i++) {
-			if (value[i] % 2 == 0) {
-				System.out.print("‹ô”:" + value[i]);
+		for (int i = 0; i < values.length; i++) {
+			if (values[i] % 2 == 0) {
+				evenValues[i] =values[i];
 			} else {
-				System.out.print("Šï”:" + value[i]);
+				oddValues[i] =values[i];
+			}
+		}
+		
+		System.out.print("‹ô”‚Í");
+		for(int i=0;i<evenValues.length;i++) {
+			if(evenValues[i] > 0) {
+				System.out.print(evenValues[i]+", ");		
+			}
+		}
+
+		System.out.print("Šï”‚Í");
+		for(int i=0;i<oddValues.length;i++) {
+			if(oddValues[i] > 0) {
+				System.out.print(oddValues[i]+", ");		
+			}
+		}
+
+		
+
+		/**for (int i = 0; i < values.length; i++) {
+			if (values[i] % 2 == 0) {
+				System.out.print("‹ô”:" + values[i]);
+			} else {
+				System.out.print("Šï”:" + values[i]);
 			}
 
-		}
+		}*/
 
 	}
 
