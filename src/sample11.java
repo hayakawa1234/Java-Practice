@@ -24,12 +24,25 @@ public class sample11 {
 		value = 40;
 		value2 = 50;
 		
+		
 		av = avarage(value, value2);
 
-		System.out.print(av);
+		System.out.println(av);
+		
+		int value3, value4;
+		double av1;
+		value3 = 10;
+		value4 = 100;
+		
+		av1 = avarage1(value3, value4);
+		System.out.println(av1);
+		
 	}
 
 	public static double avarage(int a, int b) {
 		return ((a + b) / 2.0);
+	}
+	public static double avarage1(int c, int d) {
+		return ((c + d) / 2.0);
 	}
 }
