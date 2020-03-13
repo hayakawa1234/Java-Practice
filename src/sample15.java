@@ -19,15 +19,18 @@ public class sample15 {
 		values[8] = 8;
 		values[9] = 3;
 
-		/*
-		 * int[] mult = new int[10]; for (int i = 0; i < values.length; i++) { mult[i] =
-		 * values[i] * 2; System.out.println(mult[i]); }
-		 */
+		int[] mult = new int[10];
+		for (int i = 0; i < values.length; i++) {
+			mult[i] = values[i] * 2;
+			System.out.println(mult[i]);
+		}
 
 		for (int i = 0; i < values.length; i++) {
 			values[i] = values[i] * 2;
-			System.out.println(values[i]);
 		}
 
+		for (int i = 0; i < values.length; i++) {
+			System.out.println(values[i]);
+		}
 	}
 }
